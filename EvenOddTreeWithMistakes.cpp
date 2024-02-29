@@ -103,7 +103,7 @@ public:
         }
         */
 
-        //the below did not work for a vector of vectors, reason unclear, do not attempt this in the future
+        //the below did not work as all_for cannot accept conditions that change depending on index
         /*
         return all_of(levels.cbegin(), levels.cend(), [](vector<TreeNode*> level){
             return (adjacent_find(level.begin(), level.end(), [](TreeNode* lhs, TreeNode* rhs){
